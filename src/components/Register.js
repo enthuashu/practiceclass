@@ -10,7 +10,7 @@ const Register = () => {
     try {
       if (email.trim() === "") return alert("Email is empty");
       if (name.trim() === "") return alert("name is empty");
-      if (phonenumber.trim() === "") return alert("phonenumber is empty");
+      if (phonenumber.trim() === "") return alert("phone number is empty");
       if (address.trim() === "") return alert("address is empty");
       const response = await axios.post("/api/register", {
         email,
